@@ -2,7 +2,8 @@ import json
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8371318431:AAFdnvsKwoKnilSgCChC-OFBep3-ZTpMX2c"
+import os
+TOKEN = os.getenv("TOKEN")
 ADMIN_ID = 7132704371
 
 USERS_FILE = "users.json"
