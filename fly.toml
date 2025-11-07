@@ -6,3 +6,8 @@ app = "xpert-trader-bot"
 
   [[services.ports]]
     port = "80"
+[processes]
+  app = "python bot.py"
+
+[scale]
+  count = 1
